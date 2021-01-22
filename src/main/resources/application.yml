@@ -1,0 +1,15 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /boot1
+
+# redisson配置
+redisson:
+  host:
+    config: redis://127.0.0.1:6379
+  database: 1
+
+spring:
+  redis:
+    cluster:
+      nodes: "192.168.1.11:7000,192.168.1.12:7000,192.168.1.12:7001"
